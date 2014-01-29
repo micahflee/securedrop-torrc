@@ -14,18 +14,22 @@ If you want to use the binary that I've already compiled:
 * Copy the `update_torrc` binary into your Persistent folder
 * Then run this to set the correct permissions:
 
-    cd /home/amnesia/Persistent
-    sudo chown root:root update_torrc
-    sudo chmod 755 update_torrc
-    sudo chmod +s update_torrc
+```
+cd /home/amnesia/Persistent
+sudo chown root:root update_torrc
+sudo chmod 755 update_torrc
+sudo chmod +s update_torrc
+```
 
 If you don't trust me and want to compile it yourself:
 
 * Copy `update_torrc.c` and `build.sh` to your Persistent folder
 * Then run this:
 
-    sudo apt-get install build-essential
-    cd /home/amnesia/Persistent
-    sudo ./build.sh
+```
+sudo apt-get install build-essential
+cd /home/amnesia/Persistent
+sudo ./build.sh
+```
 
 Go ahead and reboot Tails. From this point on you can boot Tails and mount your persistent volume but not set a root password. All you have to do is wait to connect to the Tor network, open your Persistent folder, and double-click on `update_torrc`.
