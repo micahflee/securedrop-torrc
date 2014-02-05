@@ -9,6 +9,14 @@ To install this in your own Tails persistent volume:
 * Boot to Tails, mount your persistent volume, and choose More Options to set a password the first time
 * Create a new `torrc.additions` file in your Persistent folder that contains the HidServAuth line you need
 
+When you're done creating this file, lock down its permissions:
+
+```
+cd /home/amnesia/Persistent
+sudo chown root:root torrc.additions
+sudo chmod 444 torrc.additions
+```
+
 If you want to use the binary that I've already compiled:
 
 * Copy the `update_torrc` binary into your Persistent folder
